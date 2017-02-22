@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 14</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src="module.js"></script>
+    <script src="controllerOne.js"></script>
+    <script src="controllerTwo.js"></script>
+    <script src="controllerThree.js"></script>
+    <script src="controllerFour.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+  </head>
+  <body ng-app='myMod'>
+
+    <h3>Lab 14 - Animals</h3>
+
+  <nav>
+    <a href="#/dog">Dog</a>
+    <a href="#/cat">Cat</a>
+    <a href="#/penguin">Penguin</a>
+    <a href="#/giraffe">Giraffe</a>
+  </nav>
+
+  <div class="view">
+    <ng-view></ng-view>
+  </div>
+
+  </body>
+</html>
